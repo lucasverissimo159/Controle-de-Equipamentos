@@ -1,0 +1,26 @@
+# Sistema de Controle de Equipamentos - Dependências
+# pip install -r requirements.txt
+
+# Interface gráfica moderna
+customtkinter>=5.2.0
+
+# Seletor de calendário
+tkcalendar>=1.6.1
+
+# Gráficos estáticos
+matplotlib>=3.7.0
+
+# Gráficos interativos
+plotly>=5.15.0
+
+# Exportação Excel/CSV
+openpyxl>=3.1.2
+
+# Manipulação de imagens
+Pillow>=10.0.0
+
+# Geração de PDF
+reportlab>=4.0.0
+
+# Cálculos numéricos
+numpy>=1.24.0
