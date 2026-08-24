@@ -1,3 +1,316 @@
+*Read this in other languages: [English](#english), [Português](#português).*
+
+---
+
+# English
+
+# 📦 Equipment Control System
+
+Desktop system for managing equipment movements (deliveries and collections).
+
+![Python](https://img.shields.io/badge/Python-3.8+-blue.svg)
+![CustomTkinter](https://img.shields.io/badge/CustomTkinter-5.2+-green.svg)
+![SQLite](https://img.shields.io/badge/SQLite-3-orange.svg)
+![License](https://img.shields.io/badge/License-View--Only-red.svg)
+
+> ⚠️ **Repository available only for portfolio.** The code can be viewed, but **cannot** be copied, downloaded, used or reused in other projects. See the [License](#-license) section and the [`LICENSE`](./LICENSE) file.
+
+---
+
+## 📋 Features
+
+### Main Window
+- ✅ Registration of movements (DELIVERY 🔴 / COLLECTION 🟡)
+- ✅ Editing of records
+- ✅ History of changes
+- ✅ Filters by date, collaborator, equipment, client, location and type
+- ✅ Integrated calendar
+- ✅ Vibrant colors by type of movement
+
+### Registration Form — Client Identification
+Three identification modes, selectable by radio buttons:
+- **REGISTERED** — badge reading (registration number) with automatic name filling.
+- **BY NAME** — searches for an already registered client by **name** (partial, *case-insensitive*) when the badge is not available. Upon choosing a result, registration number and name are filled exactly as in badge reading.
+- **WITHOUT REGISTRATION** — manual entry of registration number and name.
+
+### Management
+- ✅ Registration of collaborators
+- ✅ Registration of locations
+- ✅ Registration of equipment
+- ✅ Editing and deletion of items
+
+### Old Records
+- ✅ Automatic monthly archiving (JSON)
+- ✅ Viewing of historical data
+- ✅ Full filters by month/year/type
+
+### Statistics
+- ✅ Visual KPIs (Total, Deliveries, Collections, Collaborators, Locations, Equipment)
+- ✅ Temporal evolution of movements (bars and line)
+- ✅ Deliveries/Collections by Collaborator, Location and Equipment
+- ✅ Pie charts by type
+- ✅ Top 5 Rankings
+- ✅ Performance metrics
+- ✅ PDF and CSV Export
+
+### Rankings
+- ✅ By Equipment
+- ✅ By Collaborators
+- ✅ By Locations
+- ✅ Medals (🥇🥈🥉🏅)
+- ✅ PDF and CSV Export
+
+### Interface
+- ✅ Light and dark theme
+- ✅ Modern interface (CustomTkinter)
+- ✅ Informative tooltips
+- ✅ ComboBox with scroll and search
+
+---
+
+## 🚀 Installation
+
+### 1. Clone or download the project
+```bash
+git clone <repository-url>
+cd equip_control
+```
+
+### 2. Create a virtual environment (recommended)
+```bash
+python -m venv venv
+
+# Windows
+venv\Scripts\activate
+
+# Linux/Mac
+source venv/bin/activate
+```
+
+### 3. Install dependencies
+```bash
+pip install -r requirements.txt
+```
+
+### 4. Run the system
+```bash
+python main.py
+```
+
+---
+
+## 📦 Dependencies
+
+| Package | Version | Description |
+|--------|--------|-----------|
+| customtkinter | ≥5.2.0 | Modern interface |
+| tkcalendar | ≥1.6.1 | Date picker |
+| matplotlib | ≥3.7.0 | Charts |
+| plotly | ≥5.15.0 | Interactive charts |
+| openpyxl | ≥3.1.2 | Excel export |
+| Pillow | ≥10.0.0 | Image manipulation |
+| reportlab | ≥4.0.0 | PDF generation |
+| numpy | ≥1.24.0 | Numerical calculations |
+
+---
+
+## 📁 Project Structure
+
+```
+equip_control/
+├── main.py                 # Entry point
+├── requirements.txt        # Dependencies
+├── README.md               # This file
+│
+├── config/
+│   └── settings.py         # Configurations
+│
+├── models/
+│   └── database.py         # Database
+│
+├── views/
+│   ├── main_window.py      # Main window
+│   ├── record_window.py    # Registration form
+│   ├── stats_manager.py    # Statistics
+│   ├── ranking_manager.py  # Rankings
+│   └── widgets/
+│       ├── scrollable_combobox.py
+│       ├── progress_dialog.py
+│       ├── history_dialog.py
+│       ├── tooltip.py
+│       ├── helpers.py
+│       └── colors_helper.py
+│
+├── resources/
+│   └── icons/
+│       └── icon.ico        # App icon
+│
+└── arquivos_mensais/       # Monthly JSON files
+```
+
+---
+
+## 🧪 Test Data
+
+To test with fictitious data:
+
+```bash
+python gerar_dados_teste.py
+```
+
+This will:
+- Register 10 collaborators
+- Register 10 locations
+- Register 20 equipment
+- Generate ~1500 records (2023-2026)
+- Create monthly JSON files
+
+---
+
+## 🗄️ Database
+
+The system uses **SQLite** with the following tables:
+
+| Table | Description |
+|--------|-----------|
+| `registros` | Movement records |
+| `colaboradores` | Registration of collaborators |
+| `locais` | Registration of locations |
+| `equipamentos` | Registration of equipment |
+| `config` | System settings |
+| `registro_historico` | History of changes |
+
+### `registros` Table Structure
+| Column | Type | Description |
+|--------|------|-----------|
+| id | INTEGER | Primary key |
+| data | TEXT | DD/MM/YYYY |
+| colaborador | TEXT | Collaborator name |
+| equipamento | TEXT | Equipment name |
+| cliente | TEXT | Client (optional) |
+| local | TEXT | Location name |
+| horario | TEXT | HH:MM |
+| tipo | TEXT | ENTREGA or RETIRADA |
+
+---
+
+## 🎨 System Colors
+
+### Tables
+| Type | Color |
+|------|-----|
+| ENTREGA | `#fca5a5` (vibrant coral red) |
+| RETIRADA | `#fde047` (vibrant yellow) |
+
+### Charts
+| Type | Color |
+|------|-----|
+| ENTREGA | `#dc2626` (intense red) |
+| RETIRADA | `#eab308` (golden yellow) |
+
+---
+
+## 📊 Monthly Archiving
+
+The system automatically archives records into JSON files:
+
+```
+arquivos_mensais/
+├── registros_2024-11.json
+├── registros_2024-12.json
+├── registros_2025-01.json
+└── ...
+```
+
+---
+
+## ⚙️ Configuration
+
+Edit `config/settings.py` to customize:
+
+```python
+DATABASE_NAME = 'equip_control.db'  # Database name
+DEFAULT_THEME = "light"              # Default theme: "light" or "dark"
+```
+
+---
+
+## 🎨 Themes
+
+Switch between light and dark theme by clicking the **THEME** button in the header.
+
+| Theme | Description |
+|------|-----------|
+| Light | White background, black text |
+| Dark | Dark background, light text |
+
+---
+
+## 📤 Exports
+
+### PDF
+- Full report with charts
+- Statistical data
+- A4 landscape format
+
+### CSV/Excel
+- Tabular data
+- Excel compatible
+- .csv or .xlsx format
+
+---
+
+## 🔧 Development
+
+### MVC Architecture
+- **Model:** `models/database.py`
+- **View:** `views/*.py`
+- **Controller:** Integrated in views
+
+### Add new functionality
+1. Create the widget in `views/widgets/`
+2. Import in `views/main_window.py`
+3. Add to TabView or where necessary
+
+---
+
+## 📝 Changelog
+
+See [CHANGELOG.md](CHANGELOG.md) for history of changes.
+
+---
+
+## 🆘 Support
+
+If you encounter any problem:
+1. Check if dependencies are installed
+2. Check if you are in the correct directory
+3. Try deleting `equip_control.db` and running again
+
+```bash
+rm equip_control.db
+python main.py
+```
+
+---
+
+## 📄 License
+
+This repository is **not open source**. It is made publicly available solely for portfolio/technical demonstration purposes.
+
+- ✅ Allowed: view the code via the GitHub interface.
+- ❌ Prohibited: copy, download, clone for reuse, use, modify, execute or redistribute this code, in whole or in part, without prior written authorization from the author.
+
+All rights reserved. See the full terms in [`LICENSE`](./LICENSE).
+
+---
+
+**Equipment Control System v2.0.0** 📦
+
+---
+
+# Português
+
 # 📦 Sistema de Controle de Equipamentos
 
 Sistema desktop para gerenciamento de movimentações de equipamentos (entregas e retiradas).
