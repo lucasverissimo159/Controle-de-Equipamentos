@@ -1,57 +1,85 @@
-Copyright (c) 2026 Lucas Veríssimo. Todos os direitos reservados.
+# License / Licença
 
-LICENÇA DE APENAS VISUALIZAÇÃO (VIEW-ONLY LICENSE)
-
-Este repositório é disponibilizado publicamente exclusivamente para fins de
-demonstração e avaliação de portfólio. NÃO se trata de software livre nem de
-código aberto (open source), apesar de o código estar visível publicamente.
-
-1. PERMISSÕES
-
-   É permitido apenas:
-   a) Visualizar o código-fonte deste repositório através da interface do
-      GitHub (ou plataforma equivalente) para fins de avaliação de
-      portfólio, recrutamento ou revisão técnica.
-
-2. PROIBIÇÕES
-
-   Sem autorização prévia e por escrito do autor, é expressamente proibido:
-   a) Copiar, reproduzir, baixar (clone/download/fork mantido) ou
-      armazenar este código, no todo ou em parte;
-   b) Usar, executar, instalar ou implantar este código, no todo ou em
-      parte, em qualquer ambiente ou finalidade;
-   c) Modificar, adaptar ou criar obras derivadas a partir deste código;
-   d) Redistribuir, sublicenciar, publicar ou disponibilizar este código,
-      no todo ou em parte, em qualquer outro repositório, produto ou meio;
-   e) Utilizar este código, no todo ou em parte, em projetos pessoais,
-      acadêmicos ou comerciais, próprios ou de terceiros;
-   f) Utilizar este código para treinar, ajustar (fine-tuning) ou avaliar
-      modelos de aprendizado de máquina ou inteligência artificial.
-
-3. AUSÊNCIA DE LICENÇA DE USO
-
-   Nenhuma disposição deste documento deve ser interpretada como concessão,
-   por implicação, preclusão (estoppel) ou qualquer outro meio, de licença
-   ou direito sobre qualquer patente, marca, direito autoral ou outro
-   direito de propriedade intelectual do autor, além do direito de
-   visualização descrito na Seção 1.
-
-4. ISENÇÃO DE GARANTIAS
-
-   ESTE CÓDIGO É DISPONIBILIZADO "NO ESTADO EM QUE SE ENCONTRA" (AS IS),
-   SEM GARANTIA DE QUALQUER TIPO, EXPRESSA OU IMPLÍCITA. O AUTOR NÃO SE
-   RESPONSABILIZA POR QUALQUER DANO DECORRENTE DO USO NÃO AUTORIZADO DESTE
-   CÓDIGO.
-
-5. CONTATO
-
-   Para solicitar permissão de uso além do escopo desta licença, entre em
-   contato diretamente com o autor.
+*Read this in other languages: [English](#english), [Português](#português).*
 
 ---
 
-Nota: por não ser uma licença reconhecida pela Open Source Initiative (OSI),
-este repositório não deve ser rotulado como "open source". Na ausência de
-uma licença explícita, a legislação de direitos autorais já reserva
-automaticamente todos os direitos ao autor — este arquivo apenas torna essa
-condição explícita e detalha o que é (e o que não é) permitido.
+## English
+
+Copyright (c) 2026 Lucas Veríssimo. All rights reserved.
+
+**VIEW-ONLY LICENSE**
+
+This repository is made publicly available exclusively for demonstration and portfolio evaluation purposes. It is NOT free software nor open-source software, even though the code is publicly visible.
+
+### 1. PERMISSIONS
+
+The following is permitted only:
+a) View the source code of this repository through the GitHub interface (or equivalent platform) for portfolio evaluation, recruitment, or technical review purposes.
+
+### 2. PROHIBITIONS
+
+Without prior written authorization from the author, it is expressly prohibited to:
+a) Copy, reproduce, download (maintained clone/download/fork), or store this code, in whole or in part;
+b) Use, execute, install, or deploy this code, in whole or in part, in any environment or for any purpose;
+c) Modify, adapt, or create derivative works based on this code;
+d) Redistribute, sublicense, publish, or make this code available, in whole or in part, in any other repository, product, or medium;
+e) Use this code, in whole or in part, in personal, academic, or commercial projects, whether belonging to you or to third parties;
+f) Use this code to train, fine-tune, or evaluate machine learning or artificial intelligence models.
+
+### 3. NO LICENSE FOR USE
+
+Nothing in this document shall be construed as granting, by implication, estoppel, or otherwise, any license or right under any patent, trademark, copyright, or other intellectual property right of the author, other than the view-only right described in Section 1.
+
+### 4. DISCLAIMER OF WARRANTIES
+
+THIS CODE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED. THE AUTHOR IS NOT LIABLE FOR ANY DAMAGES ARISING FROM THE UNAUTHORIZED USE OF THIS CODE.
+
+### 5. CONTACT
+
+To request permission for use beyond the scope of this license, contact the author directly.
+
+---
+
+*Note: As this is not a license recognized by the Open Source Initiative (OSI), this repository should not be labeled as "open source". In the absence of an explicit license, copyright law automatically reserves all rights to the author — this file merely makes that condition explicit and details what is (and what is not) allowed.*
+
+---
+
+## Português
+
+Copyright (c) 2026 Lucas Veríssimo. Todos os direitos reservados.
+
+**LICENÇA DE APENAS VISUALIZAÇÃO (VIEW-ONLY LICENSE)**
+
+Este repositório é disponibilizado publicamente exclusivamente para fins de demonstração e avaliação de portfólio. NÃO se trata de software livre nem de código aberto (open source), apesar de o código estar visível publicamente.
+
+### 1. PERMISSÕES
+
+É permitido apenas:
+a) Visualizar o código-fonte deste repositório através da interface do GitHub (ou plataforma equivalente) para fins de avaliação de portfólio, recrutamento ou revisão técnica.
+
+### 2. PROIBIÇÕES
+
+Sem autorização prévia e por escrito do autor, é expressamente proibido:
+a) Copiar, reproduzir, baixar (clone/download/fork mantido) ou armazenar este código, no todo ou em parte;
+b) Usar, executar, instalar ou implantar este código, no todo ou em parte, em qualquer ambiente ou finalidade;
+c) Modificar, adaptar ou criar obras derivadas a partir deste código;
+d) Redistribuir, sublicenciar, publicar ou disponibilizar este código, no todo ou em parte, em qualquer outro repositório, produto ou meio;
+e) Utilizar este código, no todo ou em parte, em projetos pessoais, acadêmicos ou comerciais, próprios ou de terceiros;
+f) Utilizar este código para treinar, ajustar (fine-tuning) ou avaliar modelos de aprendizado de máquina ou inteligência artificial.
+
+### 3. AUSÊNCIA DE LICENÇA DE USO
+
+Nenhuma disposição deste documento deve ser interpretada como concessão, por implicação, preclusão (estoppel) ou qualquer outro meio, de licença ou direito sobre qualquer patente, marca, direito autoral ou outro direito de propriedade intelectual do autor, além do direito de visualização descrito na Seção 1.
+
+### 4. ISENÇÃO DE GARANTIAS
+
+ESTE CÓDIGO É DISPONIBILIZADO "NO ESTADO EM QUE SE ENCONTRA" (AS IS), SEM GARANTIA DE QUALQUER TIPO, EXPRESSA OU IMPLÍCITA. O AUTOR NÃO SE RESPONSABILIZA POR QUALQUER DANO DECORRENTE DO USO NÃO AUTORIZADO DESTE CÓDIGO.
+
+### 5. CONTATO
+
+Para solicitar permissão de uso além do escopo desta licença, entre em contato diretamente com o autor.
+
+---
+
+*Nota: por não ser uma licença reconhecida pela Open Source Initiative (OSI), este repositório não deve ser rotulado como "open source". Na ausência de uma licença explícita, a legislação de direitos autorais já reserva automaticamente todos os direitos ao autor — este arquivo apenas torna essa condição explícita e detalha o que é (e o que não é) permitido.*
